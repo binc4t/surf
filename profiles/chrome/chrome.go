@@ -188,7 +188,7 @@ func HeadersUB[T ~string](headers *g.MapOrd[T, T], method string) {
 		headers.Set(header.CACHE_CONTROL, "max-age=0")
 		headers.Set(header.SEC_FETCH_DEST, "document")
 		headers.Set(header.SEC_FETCH_MODE, "navigate")
-		headers.Set(header.SEC_FETCH_SITE, "same-origine")
+		headers.Set(header.SEC_FETCH_SITE, "same-origin")
 		headers.Set(header.SEC_FETCH_USER, "?1")
 		headers.Set(header.UPGRADE_INSECURE_REQUESTS, "1")
 	}
